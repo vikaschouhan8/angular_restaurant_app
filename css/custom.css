@@ -1,0 +1,20 @@
+
+  .shrink {
+  	color: orange;
+  	font-family: Georgia,sans-serif;
+  }
+
+  body {
+      background-image: url('../image/abcd.jpg');
+      position: relative;
+      text-align: center;
+      color:#fff;
+  	  /*padding-top:10em;*/
+  }
+  * { color:#fff; text-decoration: none;}
+
+      #section1 {padding-top:5px;height:500px;color: #fff;}
+
+  body {
+	     padding-top:70px;
+  }

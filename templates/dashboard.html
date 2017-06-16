@@ -1,0 +1,105 @@
+<!-- header -->
+<div class="header">
+	<div class="container-fluid">
+	    <div class="row">
+	        <div class="col-md-12" style="background-color: #a3061b; color: #fff">
+	            <div class="logo">
+	            	<h4><img src="image/logo.png" style="height: 40px">User Admin</h4>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!-- //header -->
+
+<div class="container-fluid">
+  <div class="row content"><br>
+    <div class="col-sm-3 sidenav" style='background-color: #a3061b; color: #fff; height: 500px;'>
+      <h4>Welcome {{user.username}} to FancyMonk</h4><br>
+      <h5>Now you can select your restaurant and Choose a table</h5>
+      <ul class="nav nav-pills nav-stacked"><br>
+        <li class="active">
+        	<button type="button" class="btn btn-info" data-toggle='collapse' data-target='#demo'>Add Restaurant</button>
+        	<div id="demo" class="collapse">
+        		<ul><br>
+        			<!-- <li class="active"><button type="button" data-toggle='collapse' data-target='#addMenu' class="btn btn-info"><a>Add Menu</a></button></li><br> -->
+        			<li>
+			        	<button type="button" class="btn btn-info" data-toggle='collapse' data-target='#demomenu'>Add Menu</button>
+			        	<div id="demomenu" class="collapse">
+			        		<ul><br>
+			        			<li class="active"><a href="#!/dashboard/menu/veg" type="button" data-toggle='collapse' class="btn btn-info">Veg</a></li></a><br>
+			        			<li class="active"><a href="#!/dashboard/menu/nonVeg" type="button" data-toggle='collapse' class="btn btn-info">Non veg</a></li></a><br>
+			        			<li class="active"><a href="#!/dashboard/menu/starters" type="button" data-toggle='collapse' class="btn btn-info">Starter</a></li></a><br>
+			        		</ul>
+			        	</div>
+			        </li>
+			        <br>
+			        <li>
+			        	<a href="#!/dashboard/table" type="button" class="btn btn-info" data-toggle='collapse' data-target='#demotable'>Add Table</a>
+			        </li>
+        		</ul>
+        	</div>
+        </li><br>
+        <li class="active"><a href="index.html">Logout</a></li>
+      </ul><br>
+
+    </div>
+    <br>
+    <div class="col-sm-9" style="height: 500px">
+    	<!-- start -->
+    	<div class="container-fluid">
+		  <div class="row">
+		    <div class="col-sm-4" ng-repeat="restorent in restorents">
+		      <div class="panel panel-primary">
+		        <div class="panel-heading">{{restorent.name}}</div>
+		        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+		        <div class="panel-footer">On {{restorent.location}}</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div id="addMenu" class="collapse">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-sm-4">
+				      <div class="panel panel-primary">
+				        <div class="panel-heading">Add Menu</div>
+				        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+				        <div class="panel-footer">You can select Differnt Items</div>
+				      </div>
+				    </div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+		<div id="addTable" class="collapse">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-sm-4">
+				      <div class="panel panel-primary">
+				        <div class="panel-heading">Add Table</div>
+				        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+				        <div class="panel-footer">You can select from Differnt Tables</div>
+				      </div>
+				    </div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<footer style="background-color: #a3061b; height: 50px; color: #fff">
+			  <p align="center">Copy right Fancy monk</p>	
+			</footer>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
