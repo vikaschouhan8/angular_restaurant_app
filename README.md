@@ -9,7 +9,7 @@ The technologies used here are :-
 ### This program does the following : ###
 
 1. Login and Signup option.
-2. After login it will redirect to Deshboard and will show the preconfigured restaurant which will contain top restaurant along with information.
+2. After login it will redirect to Deshboard and will show the preconfigured restaurant which will contain top restaurants along with thier information.
 3. At Deshboard we have “Add menu” and “Add table” Options.
 4. Menu item information will contain the PRICE,FOOD TYPE (veg , nonveg, egg, alcohol) and FOOD DESCRIPTION.
 5. Add Table section will add the table information. It will contain TABLE ID, TABLE NAME and NUMBER OF CHAIRS
@@ -20,7 +20,7 @@ The technologies used here are :-
 ### Steps to Run ###
 
 1. Install WAMP Server [here](http://www.wampserver.com/en/) on your system. 
-2. Clone [here](https://github.com/vikaschouhan8/angular_restaurant_app.git) inside the wamp/www/ folder in your  system.  
+2. Clone this project inside the wamp/www/ folder in your  system.  
 3. Then Start the WAMP Server.
 5. Type localhost of the browser and hit enter, it will show all the files inside the www folder.
 4. Select "angular_restaurant_app" folder. It will Show the fornt page of the angular application.
